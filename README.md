@@ -32,3 +32,8 @@ If you are using Rails and the asset pipeline you should put your images in the 
     <%= image_tag "logo.svg", {:"data-svg-fallback" => "#{image_path('logo.png')}", :alt => "Use an alt value for images!"} %>
 
 Just using the default behavior of automatically using a .png extension for the same file path won't work when the asset pipeline adds the digest to the filename during asset compilation.
+
+Credits
+-------
+
+Adapted from Thomas Fuchs' example at https://gist.github.com/3202087
