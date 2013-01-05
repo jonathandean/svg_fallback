@@ -5,6 +5,29 @@ These scripts will automatically replace all SVG images on the page (using an im
 
 Both versions work the same way and the the only difference is whether or not it uses jQuery.
 
+*Note:* The jQuery version can be placed anywhere in the document as long as jQuery has been defined. It uses DOM-Ready so either the header or bottom of the body tag will work (though JS is always best at the end of the document.) The non-jQuery version *must* be used at the end of the body tag to work properly or adapted to be used in a window.onload or some other DOM-Ready handler.
+
+Examples
+========
+
+If you place a .png file will the same name in the same directory as your .svg images, just a normal image tag will do:
+
+    <img src="images/logo.svg" />
+
+becomes
+
+    <img src="images/logo.png" />
+
+If you use a different extension for your fallback images or put them a different directory, use the data-svg-fallback. So
+
+    <img src="images/logo.svg" data-svg-fallback="images/fallback/logo.jpg" />
+
+becomes
+
+    <img src="images/fallback/logo.jpg" />
+
+If your browser supports SVG images the only thing that changes is that the 'svg' class is added to the body element on the page for other CSS/scripts to use.
+
 Using for CSS background images
 ===============================
 
