@@ -7,6 +7,11 @@ Both versions work the same way and the the only difference is whether or not it
 
 *Note:* The jQuery version can be placed anywhere in the document as long as jQuery has been defined. It uses DOM-Ready so either the header or bottom of the body tag will work (though JS is always best at the end of the document.) The non-jQuery version *must* be used at the end of the body tag to work properly or adapted to be used in a window.onload or some other DOM-Ready handler.
 
+More information
+================
+
+For a more detailed explanation and other examples, see this post: http://www.jonathandean.com/2013/01/retina-screen-ready-using-vector-svg-images-and-still-supporting-crappy-browsers/
+
 Examples
 ========
 
