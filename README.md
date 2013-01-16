@@ -15,7 +15,7 @@ For a more detailed explanation and other examples, see this post: http://www.jo
 Examples
 ========
 
-If you place a .png file will the same name in the same directory as your .svg images, just a normal image tag will do:
+If you place a .png file with the same name in the same directory as your .svg images, just a normal image tag will do:
 
     <img src="images/logo.svg" />
 
